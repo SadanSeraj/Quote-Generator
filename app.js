@@ -1,4 +1,4 @@
-let url = "https://api.quotable.io/random";
+let url = "https://dummyjson.com/quotes/random";
 let btn = document.getElementById("btn");
 
 btn.addEventListener("click", async () => {
@@ -7,7 +7,7 @@ btn.addEventListener("click", async () => {
     console.log(quote[1]);
 
     let qt = document.querySelector("#quote");
-    let ans = quote[0].toUpperCase();
+    //let ans = quote[0].toUpperCase();
     qt.innerHTML = '"' + quote[0] + '"';
 
     let ath = document.querySelector("#author");
@@ -19,7 +19,7 @@ async function getQuote() {
         let res = await fetch(url);
         let data = await res.json();
 
-        return [data.content, data.author];
+        return [data.quote, data.author];
     } catch (e) {
         console.log("error - ", e);
     }
