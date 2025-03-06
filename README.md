@@ -1,4 +1,4 @@
-# 🎉 Quote Generator
+# Quote Generator
 
 A simple and interactive **Quote Generator** web application that dynamically fetches and displays random quotes from an external API. Built using **HTML, CSS, and JavaScript**, this project provides an engaging user experience with dynamic content generation and a responsive design.  
 
